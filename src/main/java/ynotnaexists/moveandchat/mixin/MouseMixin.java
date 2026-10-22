@@ -36,7 +36,7 @@ public class MouseMixin {
             this.mouseGrabbed = true;
             this.xpos = (double) this.minecraft.getWindow().getWidth() / 2;
             this.ypos = (double) this.minecraft.getWindow().getHeight() / 2;
-            InputConstants.grabOrReleaseMouse(this.minecraft.getWindow(), InputConstants.CURSOR_DISABLED, this.xpos, this.ypos);
+            InputConstants.grabMouse(this.minecraft.getWindow(), this.xpos, this.ypos);
             ci.cancel();
         }
     }
